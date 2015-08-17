@@ -125,6 +125,9 @@ body {
     -webkit-filter: drop-shadow(0px 2px 3px #6d0707);
     filter:         drop-shadow(0px 2px 3px #6d0707); 
 }
+
+#coolidea {
+}
 @keyframes blink {
     0% {
         opacity: 1;
