@@ -131,12 +131,42 @@ body {
 
 #croppedLeftArm, #croppedHead, #croppedTorax, #croppedRightLeg, #croppedLeftLeg, #croppedRightArm {
     position: absolute;
-    width: 28%;
+    
 }
 
 #bodyImages {
+    position: relative;
     -webkit-filter: drop-shadow(0px 2px 3px #6d0707);
     filter:         drop-shadow(0px 2px 3px #6d0707);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#coolif::after {
+    -webkit-filter: drop-shadow(0px 2px 3px #6d0707);
+    filter:         drop-shadow(0px 2px 3px #6d0707);
+}
+
+#music, #computer, #pen, #skateboard, #wrench {
+    position: absolute;
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#music {
+    left: 180px;
+    top: 150px;
+}
+
+#computer {
+    top: 40px;
+    left: 190px;
+}
+
+#music:hover, #computer:hover, #pen:hover, #skateboard:hover, #wrench:hover {
+    box-shadow: 0px 1px 3px #000000;
+    opacity: 1.0;
 }
 
 @keyframes blink {
