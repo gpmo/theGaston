@@ -243,6 +243,9 @@ function gastonHead() {
                     opacity: 1
                 }, 700);
             }, 1500);
+            setTimeout(function () {
+                $(".howButton").fadeIn("slow");
+            }, 2000);
         });
 
         $("svg").eq(0).children().animate({
@@ -264,6 +267,39 @@ function gastonHead() {
 
 
 
+}
+
+function how() {
+    $(".howButton").fadeOut(function () {
+        $(".howButton").remove();
+    });
+    $("#cool").fadeOut(function () {
+        $("#cool").remove();
+    });
+    $("#cool2").fadeOut(function () {
+        $("#cool2").remove();
+    });
+    $("#left").fadeOut(function () {
+        $("#left").remove();
+    });
+    $("#right").fadeOut(function () {
+        $("#right").remove();
+    });
+    $("#ama1").fadeOut(function () {
+        $("#ama1").remove();
+    });
+    $("#papa1").fadeOut(function () {
+        $("#papa1").remove();
+    });
+    $("#corazon").fadeOut(function () {
+        $("#corazon").remove();
+    });
+    setTimeout(function () {
+        $("#pen").css("display", "block");
+        $("#pen").animate({
+            opacity: 0.7
+        });
+    }, 2000);
 }
 
 function pen() {
