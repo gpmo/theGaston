@@ -266,6 +266,68 @@ function gastonHead() {
 
 }
 
+function pen() {
+    $("#pen").fadeOut(1000, function () {
+        $("#pen").remove();
+        $("#croppedLeftArm").show("puff");
+    });
+    setTimeout(function () {
+        $("#wrench").css("display", "block");
+        $("#wrench").animate({
+            opacity: 0.7
+        });
+    }, 2000);
+}
+
+function wrench() {
+    $("#wrench").fadeOut(1000, function () {
+        $("#wrench").remove();
+        $("#croppedRightArm").show("puff");
+    });
+    setTimeout(function () {
+        $("#skateboard").css("display", "block");
+        $("#skateboard").animate({
+            opacity: 0.7
+        });
+    }, 2000);
+}
+
+function skateboard() {
+    $("#skateboard").fadeOut(1000, function () {
+        $("#skateboard").remove();
+        $("#croppedRightLeg").show("puff");
+        setTimeout(function () {
+            $("#croppedLeftLeg").show("puff")
+        }, 1000);
+    });
+    setTimeout(function () {
+        $("#music").css("display", "block");
+        $("#music").animate({
+            opacity: 0.7
+        });
+    }, 2000);
+}
+
+function music() {
+    $("#music").fadeOut(1000, function () {
+        $("#music").remove();
+        $("#croppedTorax").show("puff");
+    });
+    setTimeout(function () {
+        $("#computer").css("display", "block");
+        $("#computer").animate({
+            opacity: 0.7
+        });
+    }, 2000);
+}
+
+function computer() {
+    $("#computer").fadeOut(1000, function () {
+        $("#computer").remove();
+        $("#croppedHead").show("puff");
+    });
+}
+
 function special_second() {
     clicked_second = true;
     console.log("just clicked");
