@@ -11,6 +11,8 @@ var server = http.createServer(function (request, response) {
     } else {
         filePath = "" + request.url;
     }
+    
+    console.log(request.url);
 
     var absPath = "./" + filePath;
     serverWorking(response, absPath);
