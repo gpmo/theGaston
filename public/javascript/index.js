@@ -295,10 +295,14 @@ function how() {
         $("#corazon").remove();
     });
     setTimeout(function () {
-        $("#pen").css("display", "block");
-        $("#pen").animate({
-            opacity: 0.7
-        });
+        $(".mainText").remove();
+        $("creativeText").fadeIn();
+        setTimeout(function () {
+            $("#pen").css("display", "block");
+            $("#pen").animate({
+                opacity: 0.7
+            });
+        }, 2000);
     }, 2000);
 }
 
@@ -308,10 +312,14 @@ function pen() {
         $("#croppedLeftArm").show("puff");
     });
     setTimeout(function () {
-        $("#wrench").css("display", "block");
-        $("#wrench").animate({
-            opacity: 0.7
-        });
+        $("#penText").fadeIn();
+
+        setTimeout(function () {
+            $("#wrench").css("display", "block");
+            $("#wrench").animate({
+                opacity: 0.7
+            });
+        }, 2000);
     }, 2000);
 }
 
@@ -321,10 +329,14 @@ function wrench() {
         $("#croppedRightArm").show("puff");
     });
     setTimeout(function () {
-        $("#skateboard").css("display", "block");
-        $("#skateboard").animate({
-            opacity: 0.7
-        });
+        $("#wrenchText").fadeIn();
+
+        setTimeout(function () {
+            $("#skateboard").css("display", "block");
+            $("#skateboard").animate({
+                opacity: 0.7
+            });
+        }, 2000);
     }, 2000);
 }
 
@@ -337,11 +349,14 @@ function skateboard() {
         }, 1000);
     });
     setTimeout(function () {
-        $("#music").css("display", "block");
-        $("#music").animate({
-            opacity: 0.7
-        });
-    }, 2000);
+        $("#skateboardText").fadeIn();
+        setTimeout(function () {
+            $("#music").css("display", "block");
+            $("#music").animate({
+                opacity: 0.7
+            });
+        }, 2000);
+    }, 3000);
 }
 
 function music() {
@@ -350,10 +365,18 @@ function music() {
         $("#croppedTorax").show("puff");
     });
     setTimeout(function () {
-        $("#computer").css("display", "block");
-        $("#computer").animate({
-            opacity: 0.7
-        });
+        $("#musicText").fadeIn();
+
+        setTimeout(function () {
+            $("#creativeText").animate({
+                opacity: 0.0
+            }, function () {
+                $("#computer").css("display", "block");
+                $("#computer").animate({
+                    opacity: 0.7
+                });
+            });
+        }, 2000);
     }, 2000);
 }
 
@@ -361,7 +384,97 @@ function computer() {
     $("#computer").fadeOut(1000, function () {
         $("#computer").remove();
         $("#croppedHead").show("puff");
+        setTimeout(function () {
+            $("#lightbulb").fadeIn("slow", function () {
+                setTimeout(function () {
+                    $("#lightbulb circle").animate({
+                        svgFill: "yellow",
+                        svgStroke: "yellow"
+                    }, 1000);
+                    $("#lightbulb g path").eq(0).animate({
+                        svgFill: "yellow"
+                    }, 1000);
+
+                    $("#lightbulb g path").eq(1).animate({
+                        svgStroke: "yellow"
+                    }, 1000);
+
+                    $("#s1").animate({
+                        svgStroke: "yellow",
+                        svgFill: "yellow"
+                    }, 1000);
+                    $("#s2").animate({
+                        svgStroke: "yellow",
+                        svgFill: "yellow"
+                    }, 1000);
+                    $("#s3").animate({
+                        svgStroke: "yellow",
+                        svgFill: "yellow"
+                    }, 1000);
+                    $("#s4").animate({
+                        svgStroke: "yellow",
+                        svgFill: "yellow"
+                    }, 1000);
+                    $("#s5").animate({
+                        svgStroke: "yellow",
+                        svgFill: "yellow"
+                    }, 1000, function () {
+
+                        $("#leftText").fadeOut(function () {
+                            $("#leftText").remove();
+                        });
+                        $("#rightText").fadeOut(function () {
+                            $("#rightText").remove();
+                        });
+
+                        eurekaText();
+
+                    });
+                }, 2000);
+            });
+
+            $("#bodyImages img").fadeOut(function () {
+                $("#bodyImages img").remove();
+            });
+        }, 3000);
     });
+}
+
+function eurekaText() {
+    $("#eurekaText p").eq(0).fadeIn(function () {});
+
+    setTimeout(function () {
+        $("#eurekaText p").eq(0).fadeOut(function () {
+            $("#eurekaText p").eq(0).remove();
+            $("#eurekaText p").eq(0).fadeIn();
+        });
+    }, 3000);
+
+    setTimeout(function () {
+        $("#eurekaText p").eq(0).fadeOut(function () {
+            $("#eurekaText p").eq(0).remove();
+            $("#eurekaText p").eq(0).fadeIn();
+        });
+    }, 8000);
+
+    setTimeout(function () {
+        $("#eurekaText p").eq(0).fadeOut(function () {
+            $("#eurekaText p").eq(0).remove();
+            $("#eurekaText p").eq(0).fadeIn();
+        });
+    }, 13000);
+
+    setTimeout(function () {
+        $("#eurekaText p").eq(0).fadeOut(function () {
+            $("#eurekaText p").eq(0).remove();
+            $("#eurekaText p").eq(0).fadeIn();
+        });
+    }, 18000);
+    
+    setTimeout(function () {
+        $("#warning-text-width").fadeOut();
+        $("#coolif").fadeIn();
+    }, 21000);
 }
 
 function special_second() {

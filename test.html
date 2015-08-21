@@ -5,20 +5,52 @@
     <link rel="stylesheet" href="index.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="public/javascript/index.js"></script>
+    <script src="public/javascript/jquery.svg.min.js"></script>
+    <script src="public/javascript/jquery.svganim.min.js"></script>
 
 </head>
 
 <body>
-    <div id="bigBodyImages">
-
+    <div id="warning-text-width" style="position:fixed;bottom:5px;right:20px;width:200px;font-size:12px;color:black;opacity:0.5;line-height:120%">
+        <p>Please extend the browser window to the max for the best experience &nbsp; &nbsp;<span style="font-size:18px;"><strong>&#x263a;</strong></span> </p>
     </div>
     <div id="bodyImages" style="opacity:0.9; width:28%; margin-left:auto;margin-right:auto;">
+        <!--        <img id="lightbulb" src="images/lightbulb.svg" style="position:absolute;margin-top:35px;width:400px;margin-left:25px;">-->
+        <svg id="lightbulb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 440 440" enable-background="new 0 0 440 440" xml:space="preserve" style="position:absolute;margin-top:35px;width:400px;margin-left:25px;display:none;z-index:1">
+            <circle stroke="#000000" stroke-miterlimit="10" cx="217.2" cy="182.3" r="110.4"></circle>
+            <g>
+                <path d="M270,351.3c-33.2,9.1-64.2,9.1-97.9,0c-5.3-1.4-10-6.4-10.7-11c-4.3-41.2-18.2-82.4-48.2-123.6c-3.7-4.6-0.2-9.6,8.6-11   c61.7-9.1,127.1-9.1,189.5,0c8.8,1.4,12.8,6.4,9.3,11c-27.2,41.2-38.6,82.4-40.6,123.6C279.7,344.9,275.2,349.9,270,351.3z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M270,351.3c-33.2,9.1-64.2,9.1-97.9,0c-5.3-1.4-10-6.4-10.7-11   c-4.3-41.2-18.2-82.4-48.2-123.6c-3.7-4.6-0.2-9.6,8.6-11c61.7-9.1,127.1-9.1,189.5,0c8.8,1.4,12.8,6.4,9.3,11   c-27.2,41.2-38.6,82.4-40.6,123.6C279.7,344.9,275.2,349.9,270,351.3z"></path>
+            </g>
+            <g>
+                <path d="M269.3,375.5c-32.6,5.6-66,5.6-98.6,0c-2.7-0.5-4.9-3.1-4.9-5.8c0-0.2,0-0.3,0-0.5c0-2.7,2.2-4.5,4.9-4.1   c32.6,5.6,66,5.6,98.6,0c2.7-0.5,4.9,1.3,4.9,4.1c0,0.2,0,0.3,0,0.5C274.2,372.4,272,375,269.3,375.5z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M269.3,375.5c-32.6,5.6-66,5.6-98.6,0c-2.7-0.5-4.9-3.1-4.9-5.8   c0-0.2,0-0.3,0-0.5c0-2.7,2.2-4.5,4.9-4.1c32.6,5.6,66,5.6,98.6,0c2.7-0.5,4.9,1.3,4.9,4.1c0,0.2,0,0.3,0,0.5   C274.2,372.4,272,375,269.3,375.5z"></path>
+            </g>
+            <g>
+                <path d="M259.8,401c-26.5,2.6-53.1,2.6-79.6,0c-2.5-0.2-4.5-2.5-4.5-4.9c0-0.5,0-1,0-1.5c0-2.5,2-4.2,4.5-4   c26.5,2.6,53.1,2.6,79.6,0c2.5-0.2,4.5,1.5,4.5,4c0,0.5,0,1,0,1.5C264.2,398.5,262.2,400.7,259.8,401z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M259.8,401c-26.5,2.6-53.1,2.6-79.6,0c-2.5-0.2-4.5-2.5-4.5-4.9   c0-0.5,0-1,0-1.5c0-2.5,2-4.2,4.5-4c26.5,2.6,53.1,2.6,79.6,0c2.5-0.2,4.5,1.5,4.5,4c0,0.5,0,1,0,1.5   C264.2,398.5,262.2,400.7,259.8,401z"></path>
+            </g>
+            <g>
+                <path d="M242.1,424.5c-13.9,0.9-27.9,0.9-41.8,0c-1.8-0.1-3.3-1.7-3.3-3.5c0-1.3,0-2.5,0-3.8c0-1.8,1.5-3.2,3.3-3.1   c13.9,0.9,27.9,0.9,41.8,0c1.8-0.1,3.3,1.2,3.3,3.1c0,1.3,0,2.5,0,3.8C245.4,422.8,244,424.4,242.1,424.5z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M242.1,424.5c-13.9,0.9-27.9,0.9-41.8,0c-1.8-0.1-3.3-1.7-3.3-3.5   c0-1.3,0-2.5,0-3.8c0-1.8,1.5-3.2,3.3-3.1c13.9,0.9,27.9,0.9,41.8,0c1.8-0.1,3.3,1.2,3.3,3.1c0,1.3,0,2.5,0,3.8   C245.4,422.8,244,424.4,242.1,424.5z"></path>
+            </g>
+            <g>
+                <path d="M230.9,429.3h-18c-1.4,0-5.5-2-9.1-4.3h0c-3.6-2.4-4.1-4.3-1.2-4.3H240c2.9,0,2.7,2-0.6,4.3h0   C236.1,427.4,232.3,429.3,230.9,429.3z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M230.9,429.3h-18c-1.4,0-5.5-2-9.1-4.3h0c-3.6-2.4-4.1-4.3-1.2-4.3   H240c2.9,0,2.7,2-0.6,4.3h0C236.1,427.4,232.3,429.3,230.9,429.3z"></path>
+            </g>
+            <path id="s1" stroke="#000000" stroke-miterlimit="10" d="M222.8,6.3v54.5c0,0.6-0.5,1.1-1.1,1.1h-0.9c-0.6,0-1.1-0.5-1.1-1.1V6.3  c0-0.6,0.5-1.1,1.1-1.1h0.9C222.3,5.2,222.8,5.7,222.8,6.3z"></path>
+            <path id="s2" stroke="#000000" stroke-miterlimit="10" d="M312.5,32.2l-27.2,47.2c-0.3,0.5-1,0.7-1.5,0.4l-0.8-0.4c-0.5-0.3-0.7-1-0.4-1.5  l27.2-47.2c0.3-0.5,1-0.7,1.5-0.4l0.8,0.4C312.6,31,312.8,31.7,312.5,32.2z"></path>
+            <path id="s3" stroke="#000000" stroke-miterlimit="10" d="M63.5,90.4l47.2,27.2c0.5,0.3,0.7,1,0.4,1.5l-0.4,0.8c-0.3,0.5-1,0.7-1.5,0.4  L61.9,93.1c-0.5-0.3-0.7-1-0.4-1.5l0.4-0.8C62.3,90.3,63,90.1,63.5,90.4z"></path>
+            <path id="s4" stroke="#000000" stroke-miterlimit="10" d="M129.2,30.6l27.2,47.2c0.3,0.5,0.1,1.2-0.4,1.5l-0.8,0.4c-0.5,0.3-1.2,0.1-1.5-0.4  l-27.2-47.2c-0.3-0.5-0.1-1.2,0.4-1.5l0.8-0.4C128.2,29.9,128.9,30.1,129.2,30.6z"></path>
+            <path id="s5" stroke="#000000" stroke-miterlimit="10" d="M372.4,93.1l-47.2,27.2c-0.5,0.3-1.2,0.1-1.5-0.4l-0.4-0.8  c-0.3-0.5-0.1-1.2,0.4-1.5l47.2-27.2c0.5-0.3,1.2-0.1,1.5,0.4l0.4,0.8C373.2,92.1,373,92.8,372.4,93.1z"></path>
+        </svg>
         <img id="croppedHead" src="public/croppedHead.png">
         <img id="croppedLeftArm" src="public/croppedLeftArm.png">
         <img id="croppedTorax" src="public/croppedTorax.png">
         <img id="croppedRightArm" src="public/croppedRightArm.png">
         <img id="croppedLeftLeg" src="public/croppedLeftLeg.png">
         <img id="croppedRightLeg" src="public/croppedRightLeg.png">
+
         <div id="music" style="width:60px;height:60px;background-color:#119630;border-radius:1000px;display:none;opacity:0.0;" onclick="music()">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="width:50px;margin-top:5px;margin-left:3px;">
                 <path fill="white" d="M86.5,15.488c0-0.901-0.408-1.752-1.109-2.32c-0.703-0.567-1.626-0.791-2.509-0.603l-43.896,9.203  c-1.388,0.291-2.382,1.511-2.382,2.923v13.804v22.813c-2.404-1.748-5.354-2.792-8.552-2.792c-8.024,0-14.552,6.501-14.552,14.492  S20.028,87.5,28.052,87.5s14.552-6.501,14.552-14.492V40.921L80.5,32.975v19.323c-2.404-1.748-5.354-2.793-8.552-2.793  c-8.023,0-14.552,6.501-14.552,14.492s6.528,14.492,14.552,14.492S86.5,71.987,86.5,63.997V29.485c0-0.03-0.008-0.059-0.009-0.089  c0.001-0.035,0.009-0.068,0.009-0.103V15.488z M28.052,81.525c-4.715,0-8.552-3.82-8.552-8.516s3.836-8.516,8.552-8.516  s8.552,3.82,8.552,8.516S32.767,81.525,28.052,81.525z M42.604,27.116L80.5,19.17v7.699l-37.896,7.945V27.116z M71.948,72.513  c-4.716,0-8.552-3.82-8.552-8.516s3.836-8.516,8.552-8.516s8.552,3.82,8.552,8.516S76.664,72.513,71.948,72.513z" />
@@ -93,19 +125,19 @@
         </div>
     </div>
 
-    <div style="position:fixed;width:400px;height:500px;left:20px;top:10px;text-align:right;">
+    <div id="leftText" style="position:fixed;width:400px;height:500px;left:20px;top:10px;text-align:right;">
         <div>
             <p style="
     opacity: 0.0;
 ">Gaston's creative interest sparked when he decided to paint his room with graffiti. He then went onto obsess about <strong>pens</strong>.</p>
-            <div id="penText">
+            <div id="penText" style="display:none;">
                 <p style="
 width:300px;display:inline-block;">Besides drawing and painting with them, he would actually make these pens. He would love taking parts from different pens and putting them together. He loved to figure out the mechanics of these.</p>
                 <div style="width:90px;height:100px;display:inline-block;">
                     <img style="margin-bottom:12px;" src="images/pen.svg">
                 </div>
             </div>
-            <div id="penText" style="margin-top:80px;">
+            <div id="skateboardText" style="margin-top:80px;display:none;">
                 <p style="
 width:300px;display:inline-block;">Soon after he began skateboarding. It became more than just a passion. He decided to build his own skateboard from scratch. This was a technical challenge, but also a way to feed his creativity.</p>
                 <div style="width:90px;height:100px;display:inline-block;">
@@ -115,29 +147,40 @@ width:300px;display:inline-block;">Soon after he began skateboarding. It became 
         </div>
     </div>
     <center>
-        <div style="width:400px;">
+        <div id="creativeText" style="width:400px;">
             <p>Gaston's creative interest sparked when he decided to paint his room with graffiti. He then went onto obsess about <strong>pens</strong>.</p>
         </div>
     </center>
-    <div style="position:fixed;width:400px;height:500px;right:20px;top:10px;">
+    <div id="rightText" style="position:fixed;width:400px;height:500px;right:20px;top:10px;">
         <div style="opacity:0.0">
             <p>Gaston's creative interest sparked when he decided to paint his room with graffiti. He then went onto obsess about <strong>pens</strong>.</p>
         </div>
-        
-        <div id="wrenchText" style="margin-top:90px;">
+
+        <div id="wrenchText" style="margin-top:90px;display:none;">
             <div style="width:90px;display:inline-block;height:100px;"><img style="margin-bottom:30px;" src="images/wrench.svg"></div>
             <p style="width:300px;height:100px;display:inline-block;">This technical eagerness later went onto fixing his old house. Any broken circuits or machinery, he would try to fix. But there was a creative aspect missing to it and that's why he started using hardware store materials to make cheap jewelry and sell it.</p>
         </div>
-        <div id="wrenchText" style="margin-top:90px;">
-            <div style="width:90px;display:inline-block;height:100px;"><img style="margin-bottom:20px;;width:75px;" src="images/music.svg"></div>
-            <p style="width:300px;height:100px;display:inline-block;">And then came the music. After playing the violin for 10 years, he decided to try the guitar. He fell in love with it. He loved the creative side of it, but was seeking something technical to do as well. </p>
+        <div id="musicText" style="margin-top:90px;display:none">
+            <div style="width:90px;display:inline-block;height:100px;"><img style="margin-bottom:30px;width:75px;" src="images/music.svg"></div>
+            <p style="width:300px;height:100px;display:inline-block;">And then came the music. After playing the violin for 10 years, he decided to try the guitar. He fell in love with it. He loved the creative side of it, but was seeking something technical to do as well: he decided to build a website about rock music. </p>
         </div>
     </div>
-    <div style="width:500px;height:400px;position:fixed;bottom:-50px;left:-20px;">
+    <center>
+        <div id="eurekaText" style="width: 400px;position:fixed;left:50%;margin-left:-180px;bottom:40px;">
+            <p style="display:none;">It was then when he realized that his true passion and talent lied between <strong>creativity</strong> and <strong>technical knowledge</strong>.</p>
+            <p style="display:none;">And now, after 21 years, he believes that any technical capacity has to be used in a creative manner. If not, then it becomes useless.</p>
+            <p style="display:none;">But he also believes that the most creative ideas can only be produced with some technical knowledge. </p>
+            <p style="display:none;">In other words, <strong>creativity</strong> and <strong>technical knowledge</strong> go hand in hand.</p>
+            <p style="display:none;"><strong>Gaston</strong> = <strong>Creative</strong> + <strong>Tech</strong></p>
+        </div>
+    </center>
+    <div id="cooliframe" style="width:500px;height:400px;position:fixed;bottom:-50px;left:-20px;">
         <iframe id="coolif" width="500px" height="400px" src="final-animation.html" style="border:0px;display:none;" scrolling="no" seamless></iframe>
     </div>
 
 </body>
+<script>
+</script>
 
 
 </html>

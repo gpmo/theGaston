@@ -13,6 +13,8 @@
         //   hook=false; 
         // }
     </script> -->
+    <title>The Gaston</title>
+    <link rel="icon" href="public/gaston-favicon.ico">
     <link rel="stylesheet" href="bower_components/jqueryui/themes/smoothness/jquery-ui.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -133,6 +135,172 @@
 
   this will go without asking:
   <a href="anotherPage.html" onClick="unhook()">internal link, un-hooked</a> -->
+    <div id="warning-text-width" style="position:fixed;bottom:15px;left:15px;width:200px;font-size:12px;color:black;opacity:0.5;line-height:120%">
+        <p>Please extend the browser window to the max for the best experience &nbsp; &nbsp;<span style="font-size:18px;"><strong>&#x263a;</strong></span> </p>
+    </div>
+    <div id="bodyImages" style="opacity:0.9; width:28%; margin-left:auto;margin-right:auto;">
+        <!--        <img id="lightbulb" src="images/lightbulb.svg" style="position:absolute;margin-top:35px;width:400px;margin-left:25px;">-->
+        <svg id="lightbulb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 440 440" enable-background="new 0 0 440 440" xml:space="preserve" style="position:absolute;margin-top:35px;width:400px;margin-left:25px;display:none;z-index:1">
+            <circle stroke="#000000" stroke-miterlimit="10" cx="217.2" cy="182.3" r="110.4"></circle>
+            <g>
+                <path d="M270,351.3c-33.2,9.1-64.2,9.1-97.9,0c-5.3-1.4-10-6.4-10.7-11c-4.3-41.2-18.2-82.4-48.2-123.6c-3.7-4.6-0.2-9.6,8.6-11   c61.7-9.1,127.1-9.1,189.5,0c8.8,1.4,12.8,6.4,9.3,11c-27.2,41.2-38.6,82.4-40.6,123.6C279.7,344.9,275.2,349.9,270,351.3z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M270,351.3c-33.2,9.1-64.2,9.1-97.9,0c-5.3-1.4-10-6.4-10.7-11   c-4.3-41.2-18.2-82.4-48.2-123.6c-3.7-4.6-0.2-9.6,8.6-11c61.7-9.1,127.1-9.1,189.5,0c8.8,1.4,12.8,6.4,9.3,11   c-27.2,41.2-38.6,82.4-40.6,123.6C279.7,344.9,275.2,349.9,270,351.3z"></path>
+            </g>
+            <g>
+                <path d="M269.3,375.5c-32.6,5.6-66,5.6-98.6,0c-2.7-0.5-4.9-3.1-4.9-5.8c0-0.2,0-0.3,0-0.5c0-2.7,2.2-4.5,4.9-4.1   c32.6,5.6,66,5.6,98.6,0c2.7-0.5,4.9,1.3,4.9,4.1c0,0.2,0,0.3,0,0.5C274.2,372.4,272,375,269.3,375.5z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M269.3,375.5c-32.6,5.6-66,5.6-98.6,0c-2.7-0.5-4.9-3.1-4.9-5.8   c0-0.2,0-0.3,0-0.5c0-2.7,2.2-4.5,4.9-4.1c32.6,5.6,66,5.6,98.6,0c2.7-0.5,4.9,1.3,4.9,4.1c0,0.2,0,0.3,0,0.5   C274.2,372.4,272,375,269.3,375.5z"></path>
+            </g>
+            <g>
+                <path d="M259.8,401c-26.5,2.6-53.1,2.6-79.6,0c-2.5-0.2-4.5-2.5-4.5-4.9c0-0.5,0-1,0-1.5c0-2.5,2-4.2,4.5-4   c26.5,2.6,53.1,2.6,79.6,0c2.5-0.2,4.5,1.5,4.5,4c0,0.5,0,1,0,1.5C264.2,398.5,262.2,400.7,259.8,401z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M259.8,401c-26.5,2.6-53.1,2.6-79.6,0c-2.5-0.2-4.5-2.5-4.5-4.9   c0-0.5,0-1,0-1.5c0-2.5,2-4.2,4.5-4c26.5,2.6,53.1,2.6,79.6,0c2.5-0.2,4.5,1.5,4.5,4c0,0.5,0,1,0,1.5   C264.2,398.5,262.2,400.7,259.8,401z"></path>
+            </g>
+            <g>
+                <path d="M242.1,424.5c-13.9,0.9-27.9,0.9-41.8,0c-1.8-0.1-3.3-1.7-3.3-3.5c0-1.3,0-2.5,0-3.8c0-1.8,1.5-3.2,3.3-3.1   c13.9,0.9,27.9,0.9,41.8,0c1.8-0.1,3.3,1.2,3.3,3.1c0,1.3,0,2.5,0,3.8C245.4,422.8,244,424.4,242.1,424.5z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M242.1,424.5c-13.9,0.9-27.9,0.9-41.8,0c-1.8-0.1-3.3-1.7-3.3-3.5   c0-1.3,0-2.5,0-3.8c0-1.8,1.5-3.2,3.3-3.1c13.9,0.9,27.9,0.9,41.8,0c1.8-0.1,3.3,1.2,3.3,3.1c0,1.3,0,2.5,0,3.8   C245.4,422.8,244,424.4,242.1,424.5z"></path>
+            </g>
+            <g>
+                <path d="M230.9,429.3h-18c-1.4,0-5.5-2-9.1-4.3h0c-3.6-2.4-4.1-4.3-1.2-4.3H240c2.9,0,2.7,2-0.6,4.3h0   C236.1,427.4,232.3,429.3,230.9,429.3z"></path>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M230.9,429.3h-18c-1.4,0-5.5-2-9.1-4.3h0c-3.6-2.4-4.1-4.3-1.2-4.3   H240c2.9,0,2.7,2-0.6,4.3h0C236.1,427.4,232.3,429.3,230.9,429.3z"></path>
+            </g>
+            <path id="s1" stroke="#000000" stroke-miterlimit="10" d="M222.8,6.3v54.5c0,0.6-0.5,1.1-1.1,1.1h-0.9c-0.6,0-1.1-0.5-1.1-1.1V6.3  c0-0.6,0.5-1.1,1.1-1.1h0.9C222.3,5.2,222.8,5.7,222.8,6.3z"></path>
+            <path id="s2" stroke="#000000" stroke-miterlimit="10" d="M312.5,32.2l-27.2,47.2c-0.3,0.5-1,0.7-1.5,0.4l-0.8-0.4c-0.5-0.3-0.7-1-0.4-1.5  l27.2-47.2c0.3-0.5,1-0.7,1.5-0.4l0.8,0.4C312.6,31,312.8,31.7,312.5,32.2z"></path>
+            <path id="s3" stroke="#000000" stroke-miterlimit="10" d="M63.5,90.4l47.2,27.2c0.5,0.3,0.7,1,0.4,1.5l-0.4,0.8c-0.3,0.5-1,0.7-1.5,0.4  L61.9,93.1c-0.5-0.3-0.7-1-0.4-1.5l0.4-0.8C62.3,90.3,63,90.1,63.5,90.4z"></path>
+            <path id="s4" stroke="#000000" stroke-miterlimit="10" d="M129.2,30.6l27.2,47.2c0.3,0.5,0.1,1.2-0.4,1.5l-0.8,0.4c-0.5,0.3-1.2,0.1-1.5-0.4  l-27.2-47.2c-0.3-0.5-0.1-1.2,0.4-1.5l0.8-0.4C128.2,29.9,128.9,30.1,129.2,30.6z"></path>
+            <path id="s5" stroke="#000000" stroke-miterlimit="10" d="M372.4,93.1l-47.2,27.2c-0.5,0.3-1.2,0.1-1.5-0.4l-0.4-0.8  c-0.3-0.5-0.1-1.2,0.4-1.5l47.2-27.2c0.5-0.3,1.2-0.1,1.5,0.4l0.4,0.8C373.2,92.1,373,92.8,372.4,93.1z"></path>
+        </svg>
+        <img id="croppedHead" src="public/croppedHead.png">
+        <img id="croppedLeftArm" src="public/croppedLeftArm.png">
+        <img id="croppedTorax" src="public/croppedTorax.png">
+        <img id="croppedRightArm" src="public/croppedRightArm.png">
+        <img id="croppedLeftLeg" src="public/croppedLeftLeg.png">
+        <img id="croppedRightLeg" src="public/croppedRightLeg.png">
+
+        <div id="music" style="width:60px;height:60px;background-color:#119630;border-radius:1000px;display:none;opacity:0.0;" onclick="music()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="width:50px;margin-top:5px;margin-left:3px;">
+                <path fill="white" d="M86.5,15.488c0-0.901-0.408-1.752-1.109-2.32c-0.703-0.567-1.626-0.791-2.509-0.603l-43.896,9.203  c-1.388,0.291-2.382,1.511-2.382,2.923v13.804v22.813c-2.404-1.748-5.354-2.792-8.552-2.792c-8.024,0-14.552,6.501-14.552,14.492  S20.028,87.5,28.052,87.5s14.552-6.501,14.552-14.492V40.921L80.5,32.975v19.323c-2.404-1.748-5.354-2.793-8.552-2.793  c-8.023,0-14.552,6.501-14.552,14.492s6.528,14.492,14.552,14.492S86.5,71.987,86.5,63.997V29.485c0-0.03-0.008-0.059-0.009-0.089  c0.001-0.035,0.009-0.068,0.009-0.103V15.488z M28.052,81.525c-4.715,0-8.552-3.82-8.552-8.516s3.836-8.516,8.552-8.516  s8.552,3.82,8.552,8.516S32.767,81.525,28.052,81.525z M42.604,27.116L80.5,19.17v7.699l-37.896,7.945V27.116z M71.948,72.513  c-4.716,0-8.552-3.82-8.552-8.516s3.836-8.516,8.552-8.516s8.552,3.82,8.552,8.516S76.664,72.513,71.948,72.513z" />
+            </svg>
+        </div>
+        <div id="computer" style="width:80px;height:80px;border-radius:1000px;background-color:#232b91;display:none;opacity:0.0;" onclick="computer()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="width: 55px;margin-top: 13px;margin-left: 13px;">
+                <g>
+                    <path fill="white" d="M48.1,82.2c0,1.119,0.781,1.9,1.9,1.9c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9C48.881,80.3,48.1,81.081,48.1,82.2z" />
+                    <path fill="white" d="M42.5,82.2c0,1.119,0.781,1.9,1.9,1.9s1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9S42.5,81.081,42.5,82.2z" />
+                    <path fill="white" d="M52.8,78.501c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9c-1.118,0-1.899,0.781-1.899,1.9S51.682,78.501,52.8,78.501z" />
+                    <path fill="white" d="M47.2,78.501c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9c-1.119,0-1.9,0.781-1.9,1.9S46.081,78.501,47.2,78.501z" />
+                    <path fill="white" d="M41.6,78.501c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9s-1.9,0.781-1.9,1.9S40.481,78.501,41.6,78.501z" />
+                    <path fill="white" d="M53.7,82.2c0,1.119,0.781,1.9,1.899,1.9c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9C54.481,80.3,53.7,81.081,53.7,82.2z   " />
+                    <path fill="white" d="M52.8,85.9c-1.118,0-1.899,0.781-1.899,1.899c0,1.119,0.781,1.9,1.899,1.9c1.119,0,1.9-0.781,1.9-1.9   C54.7,86.682,53.919,85.9,52.8,85.9z" />
+                    <path fill="white" d="M47.2,85.9H36c-1.119,0-1.9,0.781-1.9,1.899c0,1.119,0.781,1.9,1.9,1.9h11.2c1.119,0,1.9-0.781,1.9-1.9   C49.1,86.682,48.319,85.9,47.2,85.9z" />
+                    <path fill="white" d="M58.4,78.501c1.118,0,1.899-0.781,1.899-1.9s-0.781-1.9-1.899-1.9c-1.119,0-1.9,0.781-1.9,1.9S57.281,78.501,58.4,78.501z" />
+                    <path fill="white" d="M58.4,85.9c-1.119,0-1.9,0.781-1.9,1.899c0,1.119,0.781,1.9,1.9,1.9c1.118,0,1.899-0.781,1.899-1.9   C60.3,86.682,59.519,85.9,58.4,85.9z" />
+                    <path fill="white" d="M36.9,82.2c0,1.119,0.781,1.9,1.9,1.9c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9C37.681,80.3,36.9,81.081,36.9,82.2z" />
+                    <path fill="white" d="M30.4,85.9c-1.119,0-1.9,0.781-1.9,1.899c0,1.119,0.781,1.9,1.9,1.9c1.119,0,1.9-0.781,1.9-1.9   C32.3,86.682,31.519,85.9,30.4,85.9z" />
+                    <path fill="white" d="M78,73.3c-3.363,0-6.1,2.736-6.1,6.101v5.601c0,3.363,2.736,6.1,6.1,6.1s6.1-2.736,6.1-6.1V79.4   C84.1,76.036,81.363,73.3,78,73.3z M75.699,79.4c0-1.269,1.032-2.3,2.301-2.3c1.268,0,2.3,1.031,2.3,2.3v5.601   c0,1.268-1.032,2.299-2.3,2.299c-1.269,0-2.301-1.031-2.301-2.299V79.4z" />
+                    <path fill="white" d="M50,46.7c-1.119,0-1.9,0.781-1.9,1.9s0.781,1.9,1.9,1.9c1.119,0,1.9-0.781,1.9-1.9S51.119,46.7,50,46.7z" />
+                    <path fill="white" d="M78,4.7H22c-3.363,0-6.1,2.736-6.1,6.101v39.2c0,3.363,2.736,6.1,6.1,6.1h16.3v2.3c0,3.364,2.736,6.101,6.1,6.101h11.2   c3.364,0,6.101-2.736,6.101-6.101v-2.3H78c3.363,0,6.1-2.736,6.1-6.1v-39.2C84.1,7.437,81.363,4.7,78,4.7z M55.6,60.7H44.4   c-1.268,0-2.3-1.031-2.3-2.3v-2.3h15.8v2.3C57.9,59.669,56.868,60.7,55.6,60.7z M19.7,10.801C19.7,9.532,20.732,8.5,22,8.5h56   c1.268,0,2.3,1.032,2.3,2.301v39.2c0,1.268-1.032,2.299-2.3,2.299H22c-1.268,0-2.3-1.031-2.3-2.299V10.801z" />
+                    <path fill="white" d="M64,69.101H19.2c-1.819,0-3.3,1.48-3.3,3.3v19.601c0,1.819,1.48,3.299,3.3,3.299H64c1.819,0,3.3-1.479,3.3-3.299V72.4   C67.3,70.581,65.819,69.101,64,69.101z M63.5,72.9v18.601H19.7V72.9H63.5z" />
+                    <path fill="white" d="M78.5,10.301h-57v34.6h57V10.301z M25.3,41.101v-27h49.399v27H25.3z" />
+                    <path fill="white" d="M36,78.501c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9s-1.9,0.781-1.9,1.9S34.881,78.501,36,78.501z" />
+                    <path fill="white" d="M31.3,82.2c0,1.119,0.781,1.9,1.9,1.9s1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9S31.3,81.081,31.3,82.2z" />
+                    <path fill="white" d="M30.4,78.501c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9c-1.119,0-1.9,0.781-1.9,1.9S29.281,78.501,30.4,78.501z" />
+                    <path fill="white" d="M24.8,78.501c1.119,0,1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9c-1.119,0-1.9,0.781-1.9,1.9S23.681,78.501,24.8,78.501z" />
+                    <path fill="white" d="M25.7,82.2c0,1.119,0.781,1.9,1.9,1.9s1.9-0.781,1.9-1.9s-0.781-1.9-1.9-1.9S25.7,81.081,25.7,82.2z" />
+                    <path fill="white" d="M24.8,89.7c1.119,0,1.9-0.781,1.9-1.9c0-1.118-0.781-1.899-1.9-1.899c-1.119,0-1.9,0.781-1.9,1.899   C22.9,88.919,23.681,89.7,24.8,89.7z" />
+                </g>
+            </svg>
+        </div>
+        <div id="pen" style="width:67px;height:67px;border-radius:1000px;background-color:orange;display:none;opacity:0.0;" onclick="pen();">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="width:50px;margin-top:8px;margin-left:9px;">
+                <g>
+                    <path fill="white" d="M32.1,76.5c-0.4,0-0.8-0.1-1.1-0.4L19.3,64.3c-0.6-0.6-0.6-1.5,0-2.1l47.1-47.1c0.6-0.6,1.5-0.6,2.1,0   l11.8,11.8c0.3,0.3,0.4,0.7,0.4,1.1s-0.2,0.8-0.4,1.1L33.2,76.1C32.9,76.4,32.5,76.5,32.1,76.5z M22.4,63.2l9.7,9.7l45-45l-9.7-9.7   L22.4,63.2z" />
+                </g>
+                <g>
+                    <path fill="white" d="M9.3,87.6c-0.4,0-0.8-0.2-1.1-0.4c-0.5-0.5-0.6-1.1-0.3-1.7l11-22.9c0.2-0.4,0.6-0.7,1.1-0.8   c0.5-0.1,1,0.1,1.3,0.4L33.2,74c0.3,0.3,0.5,0.8,0.4,1.3c-0.1,0.5-0.4,0.9-0.8,1.1l-22.9,11C9.7,87.5,9.5,87.6,9.3,87.6z    M20.7,65.8l-8.2,17.1l17.1-8.2L20.7,65.8z" />
+                </g>
+                <g>
+                    <rect fill="white" x="71.7" y="12.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 35.3939 -49.4053)" fill="#000000" width="11.2" height="11.4" />
+                    <path fill="white" d="M77.3,27c-0.3,0-0.5-0.1-0.7-0.3l-7.9-7.9c-0.4-0.4-0.4-1,0-1.4l8-8c0.4-0.4,1-0.4,1.4,0l7.9,7.9   c0.4,0.4,0.4,1,0,1.4l-8,8C77.8,26.9,77.5,27,77.3,27z M70.8,18.1l6.5,6.5l6.6-6.6l-6.5-6.5L70.8,18.1z" />
+                </g>
+                <g>
+                    <path fill="white" d="M62.5,55.8c-0.4,0-0.8-0.1-1.1-0.4c-0.6-0.6-0.6-1.5,0-2.1l15.1-15.1l-3-3c-0.6-0.6-0.6-1.5,0-2.1   s1.5-0.6,2.1,0l4,4c0.3,0.3,0.4,0.7,0.4,1.1s-0.2,0.8-0.4,1.1L63.6,55.3C63.3,55.6,62.9,55.8,62.5,55.8z" />
+                </g>
+            </svg>
+        </div>
+        <div id="skateboard" style="width:100px;height:100px;border-radius:1000px;background-color:#a52aa5;top:580px;left:180px;display:none;opacity:0.0;" onclick="skateboard()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 96 100" x="0px" y="0px" style="width: 80px;margin-top: 10px;margin-left: 10px;">
+                <path fill="white" d="M32 62c-1.104 0-2-0.9-2-2v-24c0-1.1 0.896-2 2-2s2 0.9 2 2v24c0 1.1-0.896 2-2 2z" fill="#000000" />
+                <path fill="white" d="M48.208 96h-0.416c-9.812 0-17.792-7.98-17.792-17.788 0-1.096 0.896-2 2-2s2 0.904 2 2c0 7.6 6.188 13.788 13.792 13.788h0.416c7.604 0 13.792-6.188 13.792-13.788 0-1.096 0.9-2 2-2s2 0.904 2 2c0 9.808-7.98 17.788-17.792 17.788z" fill="#000000" />
+                <path fill="white" d="M64 62c-1.1 0-2-0.9-2-2v-24c0-1.1 0.9-2 2-2s2 0.9 2 2v24c0 1.1-0.9 2-2 2z" fill="#000000" />
+                <path fill="white" d="M64 19.788c-1.1 0-2-0.904-2-2 0-7.6-6.188-13.788-13.792-13.788h-0.416c-7.604 0-13.792 6.188-13.792 13.788 0 1.096-0.896 2-2 2s-2-0.904-2-2c0-9.812 7.98-17.788 17.792-17.788h0.416c9.812 0 17.792 7.98 17.792 17.788 0 1.112-0.9 2-2 2z" fill="#000000" />
+                <path fill="white" d="M40 36h-12c-1.104 0-2-0.9-2-2v-16c0-1.1 0.896-2 2-2h12c1.104 0 2 0.9 2 2v16c0 1.1-0.896 2-2 2zM30 32h8v-12h-8v12z" fill="#000000" />
+                <path fill="white" d="M68 36h-12c-1.1 0-2-0.9-2-2v-16c0-1.1 0.9-2 2-2h12c1.1 0 2 0.9 2 2v16c0 1.1-0.9 2-2 2zM58 32h8v-12h-8v12z" fill="#000000" />
+                <path fill="white" d="M40 80h-12c-1.104 0-2-0.9-2-2v-16c0-1.1 0.896-2 2-2h12c1.104 0 2 0.9 2 2v16c0 1.1-0.896 2-2 2zM30 76h8v-12h-8v12z" fill="#000000" />
+                <path fill="white" d="M68 80h-12c-1.1 0-2-0.9-2-2v-16c0-1.1 0.9-2 2-2h12c1.1 0 2 0.9 2 2v16c0 1.1-0.9 2-2 2zM58 76h8v-12h-8v12z" fill="#000000" />
+                <path fill="white" d="M54 28h-12c-1.104 0-2-0.9-2-2s0.896-2 2-2h12c1.1 0 2 0.9 2 2s-0.9 2-2 2z" fill="#000000" />
+                <path fill="white" d="M54 72h-12c-1.104 0-2-0.9-2-2s0.896-2 2-2h12c1.1 0 2 0.9 2 2s-0.9 2-2 2z" fill="#000000" />
+            </svg>
+        </div>
+        <div id="wrench" style="width:67px;height:67px;border-radius:1000px;background-color:red;top: 310px;left: 390px;display:none;opacity:0.0;" onclick="wrench()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" x="0px" y="0px" viewBox="0 0 56.693 70.86625" xml:space="preserve" style="width:55px;margin-top: 6px;margin-left: 4px;">
+                <path d="M43.429,48.819C43.429,48.819,43.429,48.819,43.429,48.819c-1.48,0-2.859-0.587-3.884-1.654l-18.609-19.36  c-0.231-0.241-0.582-0.337-0.912-0.251c-0.853,0.225-1.728,0.339-2.601,0.339c-2.584,0-4.991-0.985-6.779-2.773  c-2.636-2.636-3.475-6.686-2.138-10.318c0.156-0.423,0.516-0.738,0.956-0.835c0.439-0.098,0.9,0.035,1.219,0.353l4.587,4.557  c0.158,0.156,0.341,0.18,0.436,0.18c0.096,0,0.281-0.024,0.438-0.183l2.791-2.809c0.24-0.242,0.239-0.634-0.003-0.875l-4.55-4.52  c-0.322-0.32-0.458-0.783-0.36-1.226c0.098-0.443,0.417-0.805,0.844-0.959c1.125-0.406,2.294-0.611,3.475-0.611  c2.583,0,4.991,0.984,6.778,2.772c2.432,2.432,3.342,5.938,2.433,9.381c-0.087,0.33,0.009,0.679,0.252,0.912l19.359,18.609  c1.052,1.011,1.639,2.372,1.654,3.83c0.014,1.459-0.546,2.831-1.578,3.862C46.22,48.258,44.868,48.819,43.429,48.819z   M20.267,24.874c0.969,0,1.909,0.399,2.578,1.096l18.609,19.36c0.521,0.542,1.223,0.84,1.975,0.84h0  c0.731,0,1.419-0.284,1.936-0.802c0.524-0.525,0.809-1.222,0.802-1.964c-0.007-0.742-0.306-1.433-0.841-1.947l-19.36-18.609  c-0.935-0.899-1.309-2.239-0.977-3.497c0.665-2.521,0.013-5.075-1.745-6.833c-1.365-1.365-3.265-2.084-5.247-1.988l2.799,2.781  c1.278,1.269,1.285,3.342,0.015,4.62l-2.79,2.809c-0.617,0.622-1.44,0.965-2.317,0.965c-0.868,0-1.686-0.337-2.302-0.949  l-2.876-2.857c-0.125,1.997,0.569,3.928,1.989,5.349c1.287,1.287,3.03,1.997,4.906,1.997c0.646,0,1.294-0.085,1.926-0.251  C19.649,24.914,19.958,24.874,20.267,24.874z M42.191,42.194c-0.657,0.657-0.657,1.721,0,2.378c0.657,0.657,1.721,0.657,2.378,0  c0.657-0.657,0.657-1.721,0-2.378C43.913,41.538,42.848,41.538,42.191,42.194z" style="
+    fill: white;
+" />
+            </svg>
+        </div>
+    </div>
+
+    <div id="leftText" style="position:fixed;width:400px;height:500px;left:20px;top:10px;text-align:right;">
+        <div>
+            <p style="
+    opacity: 0.0;
+">Gaston's creative interest sparked when he decided to paint his room with graffiti. He then went onto obsess about <strong>pens</strong>.</p>
+            <div id="penText" style="display:none;">
+                <p style="
+width:300px;display:inline-block;">Besides drawing and painting with them, he would actually make these pens. He would love taking parts from different pens and putting them together. He loved to figure out the mechanics of these.</p>
+                <div style="width:90px;height:100px;display:inline-block;">
+                    <img style="margin-bottom:12px;" src="images/pen.svg">
+                </div>
+            </div>
+            <div id="skateboardText" style="margin-top:80px;display:none;">
+                <p style="
+width:300px;display:inline-block;">Soon after he began skateboarding. It became more than just a passion. He decided to build his own skateboard from scratch. This was a technical challenge, but also a way to feed his creativity.</p>
+                <div style="width:90px;height:100px;display:inline-block;">
+                    <img style="margin-bottom:15px;" src="images/skateboard.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div id="creativeText" style="width:400px;display:none;">
+            <p>Gaston's creative interest sparked when he decided to paint his room with graffiti. He then went onto obsess about <strong>pens</strong>.</p>
+        </div>
+    </center>
+    <div id="rightText" style="position:fixed;width:400px;height:500px;right:20px;top:10px;">
+        <div style="opacity:0.0">
+            <p>Gaston's creative interest sparked when he decided to paint his room with graffiti. He then went onto obsess about <strong>pens</strong>.</p>
+        </div>
+
+        <div id="wrenchText" style="margin-top:90px;display:none;">
+            <div style="width:90px;display:inline-block;height:100px;"><img style="margin-bottom:30px;" src="images/wrench.svg"></div>
+            <p style="width:300px;height:100px;display:inline-block;">This technical eagerness later went onto fixing his old house. Any broken circuits or machinery, he would try to fix. But there was a creative aspect missing to it and that's why he started using hardware store materials to make cheap jewelry and sell it.</p>
+        </div>
+        <div id="musicText" style="margin-top:90px;display:none">
+            <div style="width:90px;display:inline-block;height:100px;"><img style="margin-bottom:30px;width:75px;" src="images/music.svg"></div>
+            <p style="width:300px;height:100px;display:inline-block;">And then came the music. After playing the violin for 10 years, he decided to try the guitar. He fell in love with it. He loved the creative side of it, but was seeking something technical to do as well: he decided to build a website about rock music. </p>
+        </div>
+    </div>
+    <center>
+        <div id="eurekaText" style="width: 400px;position:fixed;left:50%;margin-left:-180px;bottom:40px;">
+            <p style="display:none;">It was then when he realized that his true passion and talent lied between <strong>creativity</strong> and <strong>technical knowledge</strong>.</p>
+            <p style="display:none;">And now, after 21 years, he believes that any technical capacity has to be used in a creative manner. If not, then it becomes useless.</p>
+            <p style="display:none;">But he also believes that the most creative ideas can only be produced with some technical knowledge. </p>
+            <p style="display:none;">In other words, <strong>creativity</strong> and <strong>technical knowledge</strong> go hand in hand.</p>
+            <p style="display:none;"><strong>Gaston</strong> = <strong>Creative</strong> + <strong>Tech</strong></p>
+        </div>
+    </center>
+    <div id="cooliframe" style="width:500px;height:400px;position:fixed;bottom:-50px;left:-20px;">
+        <iframe id="coolif" width="500px" height="400px" src="final-animation.html" style="border:0px;display:none;" scrolling="no" seamless></iframe>
+    </div>
 </body>
 <script>
     setTimeout(function() {
