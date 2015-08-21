@@ -296,7 +296,7 @@ function how() {
     });
     setTimeout(function () {
         $(".mainText").remove();
-        $("creativeText").fadeIn();
+        $("#creativeText").fadeIn();
         setTimeout(function () {
             $("#pen").css("display", "block");
             $("#pen").animate({
