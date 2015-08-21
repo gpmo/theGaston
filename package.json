@@ -1,0 +1,8 @@
+{
+  "name" : "theGaston",
+  "version" : "0.0.1",
+  "description" : "Virtual Experience",
+  "dependencies" : {
+    "mime" : "~1.2.7"
+  }
+}
