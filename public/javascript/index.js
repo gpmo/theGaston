@@ -157,6 +157,8 @@ function sanSebastianf() {
             $("#sanSebastian").remove();
             setTimeout(function () {
                 $("#tree").fadeIn(1500, function () {
+                    $("#treeiframe").show();
+                    $("#treeiframe").append('<iframe id="treeif" width="600px" height="400px" src="familyTree.html" style="border:0px;" scrolling="no" seamless ></iframe>');
                     $("#ama1").fadeIn(1500);
                     setTimeout(function () {
                         $("#papa1").fadeIn(1500)
@@ -176,8 +178,8 @@ function sanSebastianf() {
 }
 
 function gastonHead() {
-    $("#animatron").fadeOut(1500, function () {
-        $("#animatron").remove();
+    $("#treeiframe").fadeOut(1500, function () {
+        $("#treeiframe").remove();
         $(".babyButton").hide("drop", {
             direction: 'down',
             easing: 'easeOutExpo'
@@ -371,6 +373,7 @@ function music() {
             $("#creativeText").animate({
                 opacity: 0.0
             }, function () {
+                $("#creativeText").css("position", "absolute");
                 $("#computer").css("display", "block");
                 $("#computer").animate({
                     opacity: 0.7
