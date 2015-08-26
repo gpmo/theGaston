@@ -111,6 +111,16 @@ body {
 #portfolioAlert strong a {
     color: #A96547;
 }
+
+#final-alert {
+    position: fixed;
+    opacity: 0.6;
+    width: 400px;
+    bottom: 1px;
+    right: 20px;
+}
+
+
 #townInfo,
 #sanSebastian {
     text-align: left;

@@ -18,7 +18,7 @@ function start() {
                 easing: 'easeOutExpo'
             }, 500);
             visible = true;
-            $(".alert").fadeIn("slow");
+            $("#portfolioAlert").fadeIn("slow");
         }
     });
 }
@@ -447,37 +447,47 @@ function eurekaText() {
     $("#eurekaText p").eq(0).fadeIn(function () {});
 
     setTimeout(function () {
-        $("#eurekaText p").eq(0).fadeOut(function () {
-            $("#eurekaText p").eq(0).remove();
-            $("#eurekaText p").eq(0).fadeIn();
-        });
+        $("#eurekaText p").eq(1).show(function () {});
     }, 3000);
 
     setTimeout(function () {
         $("#eurekaText p").eq(0).fadeOut(function () {
             $("#eurekaText p").eq(0).remove();
-            $("#eurekaText p").eq(0).fadeIn();
+            $("#eurekaText p").eq(1).show(function () {});
         });
     }, 8000);
 
     setTimeout(function () {
         $("#eurekaText p").eq(0).fadeOut(function () {
             $("#eurekaText p").eq(0).remove();
-            $("#eurekaText p").eq(0).fadeIn();
+            $("#eurekaText p").eq(1).show(function () {});
         });
     }, 13000);
 
     setTimeout(function () {
         $("#eurekaText p").eq(0).fadeOut(function () {
             $("#eurekaText p").eq(0).remove();
-            $("#eurekaText p").eq(0).fadeIn();
+            $("#eurekaText p").eq(1).show(function () {});
         });
+
     }, 18000);
-    
+
+    setTimeout(function () {
+        $("#eurekaText p").eq(0).fadeOut(function () {
+            $("#eurekaText p").eq(0).remove();
+        });
+    }, 21000);
+
     setTimeout(function () {
         $("#warning-text-width").fadeOut();
-        $("#coolif").fadeIn();
-    }, 21000);
+        $("#cooliframe").show();
+        $("#cooliframe").append('<iframe id="coolif" width="500px" height="400px" src="final-animation.html" style="border:0px;" scrolling="no" seamless></iframe>');
+    }, 22000);
+
+    setTimeout(function () {
+        $("#portfolioAlert").fadeOut();
+        $("#final-alert").fadeIn();
+    }, 23000);
 }
 
 function special_second() {
